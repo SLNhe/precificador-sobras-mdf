@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8fafc;
+    margin: 0;
+    padding: 20px;
+    color: #1e293b;
+}
+
+/* TITULO */
+.container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CAIXAS */
+.DadosEntrada, .resultado, .conteudo {
+    background: white;
+    padding: 25px;
+    margin: 20px auto;
+    max-width: 700px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 20px rgba(0,0,0,0.08);
+}
+
+/* INPUTS */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #cbd5e1;
+}
+
+/* BOTÕES */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+/* BOTÃO PRINCIPAL */
+#btnCalcular {
+    background: #3b82f6;
+    color: white;
+}
+
+/* BOTÕES RESULTADO */
+.resultado button:first-of-type {
+    background: #64748b;
+    color: white;
+}
+
+.resultado button:first-of-type:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+.resultado button:last-of-type {
+    background: #4a775a;
+    color: white;
+}
+
+.resultado button:last-of-type:hover {
+    background: #22c55e;
+    color: white;
+}
+
+/* BOTÕES LUCRO */
+.botoesLucro {
+    display: flex;
+    gap: 10px;
+}
+
+.botoesLucro button {
+    flex: 1;
+    background: #e2e8f0;
+}
+
+/* RESULTADO */
+.resultado {
+    display: none;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.footer a {
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .DadosEntrada, .resultado, .conteudo {
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .botoesLucro {
+        flex-wrap: wrap;
+    }
+}

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora de MDF Online | Precificar Sobras de MDF Fácil</title>
+
+    <meta name="description"
+        content="Calcule o valor da sobra de MDF com precisão. Ferramenta online gratuita para marceneiros e profissionais da construção. Evite prejuízo e aumente seu lucro.">
+
+    <link rel="stylesheet" href="css/style.css?v=1">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6321862506420419"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- TITULO -->
+    <div class="container">
+        <h1>MDF Precificador</h1>
+        <p>Calcule o valor da sua sobra de MDF em segundos e evite prejuízo</p>
+    </div>
+
+    <!-- FORMULARIO -->
+    <div class="DadosEntrada">
+
+        <div>
+            <label>NOME DO MDF</label>
+            <input id="nomeMDF" type="text" placeholder="Ex: MDF Branco TX 15mm (Opcional)">
+        </div>
+
+        <div>
+            <label>VALOR DA CHAPA INTEIRA (R$)</label>
+            <input id="valorMDF" type="number" placeholder="Ex: 300">
+        </div>
+
+        <div>
+            <label>TAMANHO DA SOBRA (mm)</label>
+            <input id="larguraSOBRA" type="number" placeholder="Largura">
+            <input id="comprimentoSOBRA" type="number" placeholder="Comprimento">
+        </div>
+
+        <div>
+            <label>% DE LUCRO</label>
+
+            <div class="botoesLucro">
+                <button type="button" onclick="setLucro(0)">0%</button>
+                <button type="button" onclick="setLucro(10)">10%</button>
+                <button type="button" onclick="setLucro(20)">20%</button>
+                <button type="button" onclick="setLucro(30)">30%</button>
+            </div>
+
+            <input id="porcentagemLucro" type="number" placeholder="Ou digite ex: 15">
+        </div>
+
+        <button id="btnCalcular" onclick="calcular()">Gerar Valor</button>
+
+    </div>
+
+    <!-- RESULTADO (CORRIGIDO) -->
+    <div id="resultadoBox" class="resultado">
+        <h2>Resultado</h2>
+
+        <p id="resNome">Nome: -</p>
+        <p id="resValor">Valor: R$ 0,00</p>
+
+        <button onclick="copiar()">📋 Copiar</button>
+        <button onclick="enviarWhats()">📲 Enviar por WhatsApp</button>
+    </div>
+
+
+    <!-- CONTEUDO -->
+    <div class="conteudo">
+
+        <h2>Calculadora de MDF Online: Como Precificar Sobras de Forma Correta</h2>
+
+        <p>
+            Se você trabalha com marcenaria ou venda de MDF, sabe que muitas vezes sobram pedaços de material que podem
+            ser reaproveitados.
+            O problema é: quanto cobrar por essas sobras?
+        </p>
+
+        <p>
+            O MDF Precificador foi criado exatamente para resolver isso. Com base no tamanho da chapa original e na área
+            da sobra,
+            você consegue calcular automaticamente um valor justo e ainda adicionar sua margem de lucro.
+        </p>
+
+        <h3>Por que calcular o valor da sobra de MDF é importante?</h3>
+
+        <p>
+            Sem um cálculo correto, você pode acabar vendendo suas sobras por um valor muito baixo, acumulando prejuízo
+            ao longo do tempo.
+        </p>
+
+        <ul>
+            <li>Evita prejuízo na venda de sobras</li>
+            <li>Ajuda a manter o controle financeiro</li>
+            <li>Valoriza seu material</li>
+            <li>Transforma desperdício em lucro</li>
+        </ul>
+
+        <h3>Como funciona o cálculo?</h3>
+
+        <p>
+            O sistema calcula a proporção da área da sobra em relação à chapa inteira.
+            Depois disso, aplica o valor da chapa e adiciona a margem de lucro definida por você.
+        </p>
+
+        <h3>Tamanho padrão da chapa de MDF</h3>
+
+        <p>
+            A maioria das chapas de MDF segue o padrão de 1850mm x 2750mm.
+            Essa medida é usada como base para todos os cálculos da ferramenta.
+        </p>
+
+        <h3>Vale a pena vender sobras de MDF?</h3>
+
+        <p>
+            Sim, e muito. Muitas marcenarias descartam material que poderia gerar renda extra.
+            Com organização e precificação correta, é possível criar uma nova fonte de lucro apenas com sobras.
+        </p>
+
+        <h3>Quem pode usar essa calculadora?</h3>
+
+        <ul>
+            <li>Marceneiros profissionais</li>
+            <li>Lojas de MDF</li>
+            <li>Projetistas de móveis</li>
+            <li>Autônomos da construção civil</li>
+        </ul>
+
+        <h3>Dicas para ganhar dinheiro com MDF</h3>
+
+        <ul>
+            <li>Organize suas sobras por tamanho</li>
+            <li>Venda kits de pedaços menores</li>
+            <li>Use essa calculadora para padronizar preços</li>
+            <li>Divulgue suas sobras em marketplaces</li>
+        </ul>
+
+        <h3>Erros comuns ao vender MDF</h3>
+
+        <ul>
+            <li>Vender sem calcular</li>
+            <li>Não aplicar margem de lucro</li>
+            <li>Ignorar pequenas perdas que viram prejuízo</li>
+            <li>Não padronizar preços</li>
+        </ul>
+
+        <h3>Ferramenta gratuita e online</h3>
+
+        <p>
+            O MDF Precificador é uma ferramenta gratuita, acessível pelo celular ou computador.
+            Você pode usar quantas vezes quiser para calcular diferentes sobras rapidamente.
+        </p>
+
+    </div>
+
+    <!-- RODAPÉ -->
+    <div class="footer">
+        <p>© 2026 Sôlin Heusser</p>
+
+        <a href="https://slnhe.github.io/Portifolio/" target="_blank">Sobre mim</a>
+    </div>
+
+    <script src="js/sobra.js?v=1"></script>
+
+</body>
+
+</html>
